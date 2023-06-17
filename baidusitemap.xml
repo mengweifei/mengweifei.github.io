@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite-url/cn/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-04-16</lastmod>
+    <loc>http://yoursite-url/cn/%E4%BC%9A%E4%BB%A5%E7%89%A9%E5%96%9C%EF%BC%8C%E4%BC%9A%E4%BB%A5%E5%87%A0%E6%82%B2/</loc>
+    <lastmod>2020-06-03</lastmod>
   </url>
 </urlset> 
