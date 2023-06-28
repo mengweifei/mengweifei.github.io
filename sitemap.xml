@@ -23,6 +23,13 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/cn/nginx/</loc>
+    
+    <lastmod>2023-05-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/cn/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</loc>
     
     <lastmod>2023-05-01</lastmod>
@@ -73,6 +80,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://yoursite-url/tags/Nginx/</loc>
+    <lastmod>2023-06-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -84,6 +98,13 @@
   
   <url>
     <loc>http://yoursite-url/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2023-06-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2023-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
