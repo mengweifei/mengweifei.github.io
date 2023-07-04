@@ -23,6 +23,13 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/cn/%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
+    
+    <lastmod>2023-05-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/cn/%E7%AE%97%E6%B3%95%E4%B9%8B%E9%93%BE%E8%A1%A8/</loc>
     
     <lastmod>2023-05-05</lastmod>
@@ -67,7 +74,7 @@
 
   <url>
     <loc>http://yoursite-url/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,28 +82,28 @@
   
   <url>
     <loc>http://yoursite-url/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/tags/Nginx/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/tags/%E7%AE%97%E6%B3%95%E4%B9%8B%E9%93%BE%E8%A1%A8/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -105,21 +112,21 @@
   
   <url>
     <loc>http://yoursite-url/categories/%E6%B0%B4%E4%BA%91%E8%BA%AB%E7%BB%99%E4%BD%A0%E7%9A%84%E6%8E%A8%E9%80%81/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/categories/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
