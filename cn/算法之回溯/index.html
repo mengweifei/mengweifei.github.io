@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content="v-vincen,v-vincen,livemylife,IT  blog,Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/me.jpg"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/cn/算法之回溯/">
+  <title>
+    
+      算法4 回溯 - Hello,I&#39;m Vic.
+    
+  </title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--dark">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'dark';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">水云身</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">首页</a>
+          </li>
+
+          
+          
+          
+          
+          <li>
+            <a href="/about/">
+              
+              关于
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              分类
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              归档
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              标签
+              
+              
+            </a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>搜索</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: url('lml_bg8.jpg');
+      --intro-header-background-image-url-page: url('/lml_bg8.jpg');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('lml_bg8.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/lml_bg8.jpg');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('lml_bg8.jpg'); */
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/signature1-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#算法之回溯" title="算法之回溯">算法之回溯</a>
+              
+            </div>
+            <h1>算法4 回溯</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 水云身 on
+              2023-05-13
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">14</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">3.3k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1>算法之回溯</h1>
+<p>最近学习了灵神讲的回溯，回溯的核心是边界条件的处理，先要选定一个边界条件，再判断边界条件是否达到从而进行不同的处理。同时回溯中要主要保存当前的现场状态（该状态有时候是被保存在递归栈中，有时候是保存在数组中），特别是在用数组的时候，在回溯时需要删除数组中的元素。</p>
+<p>先来看这样一个题目：leetcode17 电话号码的字母组合</p>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/letter-combinations-of-a-phone-number/">https://leetcode.cn/problems/letter-combinations-of-a-phone-number/</a></p>
+<p><img src="image-20230712151410894.png" alt="image-20230712151410894"></p>
+<p>对于这样的一个问题，可以使用循环来做，毕竟回溯在某种意义上就是一个多重循环，亦可以使用回溯。在这个问题中，我们使用一个数组path来记录路径上的每个路径上的字母，然后一直找下一个，知道数组的长度等于所给的digits的长度n，相当于深度遍历，从dfs(i)—&gt;dfs(i+1)。那么边界条件就是path数组是否达到了长度n，如果达到了就返回当前数组，如果没达到就枚举下一个数字映射的字母集合。</p>
+<p>针对这个问题，提出如下三个问题：</p>
+<ol>
+<li>当前操作是什么？ 在这里是枚举path[i]要填入的字母</li>
+<li>子问题是什么？ 即构造字符串&gt;=i的部分</li>
+<li>下一个子问题是什么？ 即构造字符串中&gt;=i+1的部分</li>
+</ol>
+<p>时间复杂度$O(4^n)$，空间复杂度$O(n)$</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> phoneMap <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span> = <span class="keyword">map</span>[<span class="keyword">string</span>]<span class="keyword">string</span>&#123; <span class="comment">//用于存储字母</span></span><br><span class="line">    <span class="string">&quot;2&quot;</span>: <span class="string">&quot;abc&quot;</span>,</span><br><span class="line">    <span class="string">&quot;3&quot;</span>: <span class="string">&quot;def&quot;</span>,</span><br><span class="line">    <span class="string">&quot;4&quot;</span>: <span class="string">&quot;ghi&quot;</span>,</span><br><span class="line">    <span class="string">&quot;5&quot;</span>: <span class="string">&quot;jkl&quot;</span>,</span><br><span class="line">    <span class="string">&quot;6&quot;</span>: <span class="string">&quot;mno&quot;</span>,</span><br><span class="line">    <span class="string">&quot;7&quot;</span>: <span class="string">&quot;pqrs&quot;</span>,</span><br><span class="line">    <span class="string">&quot;8&quot;</span>: <span class="string">&quot;tuv&quot;</span>,</span><br><span class="line">    <span class="string">&quot;9&quot;</span>: <span class="string">&quot;wxyz&quot;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> combinations []<span class="keyword">string</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">letterCombinations</span><span class="params">(digits <span class="keyword">string</span>)</span> []<span class="title">string</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(digits) == <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> []<span class="keyword">string</span>&#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    combinations = []<span class="keyword">string</span>&#123;&#125;</span><br><span class="line">    backtrack(digits, <span class="number">0</span>, <span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span> combinations</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">backtrack</span><span class="params">(digits <span class="keyword">string</span>, index <span class="keyword">int</span>, combination <span class="keyword">string</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> index == <span class="built_in">len</span>(digits) &#123;	<span class="comment">//边界条件</span></span><br><span class="line">        combinations = <span class="built_in">append</span>(combinations, combination)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;					<span class="comment">//枚举数字对应的下一个字母</span></span><br><span class="line">        digit := <span class="keyword">string</span>(digits[index])</span><br><span class="line">        letters := phoneMap[digit]</span><br><span class="line">        lettersCount := <span class="built_in">len</span>(letters)</span><br><span class="line">        <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; lettersCount; i++ &#123;</span><br><span class="line">            backtrack(digits, index + <span class="number">1</span>, combination + <span class="keyword">string</span>(letters[i])) </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1>子集型回溯</h1>
+<p>求一个集合的子集，每个元素都可以选或者不选</p>
+<h2 id="第78题子集">第78题	子集</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/subsets/">https://leetcode.cn/problems/subsets/</a></p>
+<p><img src="image-20230712154120085.png" alt="image-20230712154120085"></p>
+<p>这是一个典型的回溯问题，对于nums数组中的每一个元素，可以选中也可以不选中，先处理选中情景，再处理未选中的情景，在处理未选中这一情景时需要进行回溯。边界条件：递归所带参数等于数组长度（即每个元素都考察了一遍，有的选中有的不选中），回溯三问：</p>
+<ul>
+<li>当前操作？ 当前这个数选中/不选中</li>
+<li>子问题？从下标大于等于i的数字中构造子集</li>
+<li>下一个子问题？从下标大于等于i+1的数字中构造子集</li>
+</ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">subsets</span><span class="params">(nums []<span class="keyword">int</span>)</span><span class="params">(res [][]<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    set := []<span class="keyword">int</span>&#123;&#125;</span><br><span class="line">    <span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>)</span></span></span><br><span class="line">    dfs = <span class="function"><span class="keyword">func</span><span class="params">(cur <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">        <span class="comment">//先来边界条件,这里的边界条件就是cur值等于len(nums)</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(nums) == cur&#123;</span><br><span class="line">            res = <span class="built_in">append</span>(res, <span class="built_in">append</span>([]<span class="keyword">int</span>&#123;&#125;, set...))</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//然后对于每一个元素，有两种情况，要么选，要么不选</span></span><br><span class="line">        <span class="comment">//选的时候</span></span><br><span class="line">        set = <span class="built_in">append</span>(set, nums[cur])</span><br><span class="line">        dfs(cur+<span class="number">1</span>)</span><br><span class="line">        <span class="comment">//不选的时候</span></span><br><span class="line">        set = set[:<span class="built_in">len</span>(set)<span class="number">-1</span>]<span class="comment">//回溯</span></span><br><span class="line">        dfs(cur+<span class="number">1</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>时间复杂度：$O(n*2^n)$,一共有$2^n$个状态，但每个状态最后会拷贝到结果中，故乘n;空间复杂度：$O(n)$</p>
+<h2 id="第131题分割回文串">第131题	分割回文串</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/palindrome-partitioning/">https://leetcode.cn/problems/palindrome-partitioning/</a></p>
+<p><img src="image-20230712170520184.png" alt="image-20230712170520184"></p>
+<p>同样按照回溯的方法来处理，首先看边界条件，即分割完毕，设从i开始分割，i到s的末尾，即i==len(s)，就将分割的字串数组加入答案中；否则就继续分割。接着看回溯三问：</p>
+<ul>
+<li>当前操作？判断从i往后的字串是否为回文</li>
+<li>子问题？ 下一个i即i = i+len(回文串)往后的字串是否为回文</li>
+<li>子问题的子问题？ 下下个i往后的字串是否为回文</li>
+</ul>
+<p>在这题中，提前用dp的方法维护了一个二维数组，记录了f[i] [j]表示下标从i到j是否为回文串，用以在$O(1)$的时间做出是否为回文串的判断</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">partition</span><span class="params">(s <span class="keyword">string</span>)</span> <span class="params">(ret [][]<span class="keyword">string</span>)</span></span> &#123;</span><br><span class="line">   n := <span class="built_in">len</span>(s)</span><br><span class="line">   f := <span class="built_in">make</span>([][]<span class="keyword">bool</span>, n)</span><br><span class="line">   <span class="keyword">for</span> i,_ := <span class="keyword">range</span> f&#123;</span><br><span class="line">        f[i] = <span class="built_in">make</span>([]<span class="keyword">bool</span>, n)</span><br><span class="line">        <span class="keyword">for</span> j:=<span class="keyword">range</span> f[i]&#123;</span><br><span class="line">            f[i][j] = <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// for i:=n-1; i &gt;= 0; i--&#123;</span></span><br><span class="line">    <span class="comment">//     for j :=i+1; j &lt; n; j++&#123;</span></span><br><span class="line">    <span class="comment">//         f[i][j] = f[i+1][j-1]</span></span><br><span class="line">    <span class="comment">//     &#125;</span></span><br><span class="line">    <span class="comment">// &#125;</span></span><br><span class="line">    <span class="keyword">for</span> i:=n<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--&#123;</span><br><span class="line">        <span class="keyword">for</span> j:=i+<span class="number">1</span>; j&lt;n; j++&#123;</span><br><span class="line">            f[i][j] = s[i] == s[j]  &amp;&amp; f[i+<span class="number">1</span>][j<span class="number">-1</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="comment">//先判断出回文串的下标  T = O(n^2)</span></span><br><span class="line">    splits := []<span class="keyword">string</span>&#123;&#125;  <span class="comment">//用于存放划分的子串</span></span><br><span class="line">    <span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>)</span></span></span><br><span class="line">    dfs = <span class="function"><span class="keyword">func</span><span class="params">(i <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> i == n&#123;  <span class="comment">//长度达到n 则将当前划分的字串集合传入返回结果中</span></span><br><span class="line">            ret = <span class="built_in">append</span>(ret, <span class="built_in">append</span>([]<span class="keyword">string</span>&#123;&#125;, splits...))</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> j := i; j&lt;n; j++&#123;   <span class="comment">//长度未达到n，向后继续进行划分操作  从往后找1个 到找2个、3个</span></span><br><span class="line">            <span class="keyword">if</span> f[i][j]&#123;</span><br><span class="line">                splits = <span class="built_in">append</span>(splits, s[i:j+<span class="number">1</span>])</span><br><span class="line">                dfs(j+<span class="number">1</span>)        <span class="comment">//深度递归 回溯 </span></span><br><span class="line">                splits = splits[:<span class="built_in">len</span>(splits)<span class="number">-1</span>] </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>时间复杂度：$O(n*2^n)$,一共有$2^n$个状态，但每个状态最后会拷贝到结果中，故乘n;空间复杂度：$O(n^2)$</p>
+<h1>组合型回溯</h1>
+<h2 id="第77题组合">第77题	组合</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/combinations/description/">https://leetcode.cn/problems/combinations/description/</a></p>
+<p><img src="image-20230716125847694.png" alt="image-20230716125847694"></p>
+<p>求解不同数字的组合，先找边界条件，也就是退出条件；然后分析这一步的操作以及子问题的操作即可。</p>
+<p>至此，其实我们已经得到了一个时间复杂度为$O((^n _k)×k)$  的组合枚举，由于每次记录答案的复杂度为O(k)</p>
+<p>时间复杂度$O((^n _k)×k)$  空间复杂度$O(n)$</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">combine</span><span class="params">(n <span class="keyword">int</span>, k <span class="keyword">int</span>)</span><span class="params">(res [][]<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>)</span> //传入<span class="title">k</span> 和 <span class="title">n</span>两个参数， 用于判断是否停止，以及下一个枚举的数字</span></span><br><span class="line">    temp := []<span class="keyword">int</span>&#123;&#125;         <span class="comment">//一个临时的数字，记录栈状态</span></span><br><span class="line">    dfs = <span class="function"><span class="keyword">func</span><span class="params">(nowNum <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(temp) == k &#123; <span class="comment">//边界条件 数组长度为n时退出</span></span><br><span class="line">            res = <span class="built_in">append</span>(res, <span class="built_in">append</span>([]<span class="keyword">int</span>&#123;&#125;, temp...))</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//当前操作 </span></span><br><span class="line">        <span class="keyword">if</span> nowNum &gt; n || <span class="built_in">len</span>(temp) &gt; k&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="comment">//当下这个数字已经超过最大值了</span></span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;<span class="comment">//要么选nowNum 要么不选</span></span><br><span class="line">            temp = <span class="built_in">append</span>(temp, nowNum) <span class="comment">//选这个数字</span></span><br><span class="line">            dfs(nowNum+<span class="number">1</span>)</span><br><span class="line">            temp = temp[:<span class="built_in">len</span>(temp)<span class="number">-1</span>]</span><br><span class="line">            dfs(nowNum+<span class="number">1</span>) <span class="comment">//不选这个数字</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="第216题组合Ⅲ">第216题	组合Ⅲ</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/combination-sum-iii/description/">https://leetcode.cn/problems/combination-sum-iii/description/</a></p>
+<p><img src="image-20230716132224787.png" alt="image-20230716132224787"></p>
+<p>和上一题同样，先判断边界条件，然后分选择该数字和不选中该数字两种情况来处理。</p>
+<p>时间复杂度$O((^n _k)×k)$  空间复杂度$O(n)$</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">combinationSum3</span><span class="params">(k <span class="keyword">int</span>, n <span class="keyword">int</span>)</span><span class="params">(res [][]<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    min, max := <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; k; i++&#123;</span><br><span class="line">        min = min + i + <span class="number">1</span></span><br><span class="line">        max = max + <span class="number">9</span> - i</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> n &gt; max || n &lt; min&#123;</span><br><span class="line">        <span class="keyword">return</span> </span><br><span class="line">    &#125;</span><br><span class="line">    temp := []<span class="keyword">int</span>&#123;&#125;</span><br><span class="line">    <span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span></span><br><span class="line">    dfs = <span class="function"><span class="keyword">func</span><span class="params">(nowValue <span class="keyword">int</span>, sum <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> sum == n &amp;&amp; <span class="built_in">len</span>(temp) == k  &#123;</span><br><span class="line">            res = <span class="built_in">append</span>(res, <span class="built_in">append</span>([]<span class="keyword">int</span>&#123;&#125;, temp...))</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125; <span class="comment">//退出条件1</span></span><br><span class="line">        <span class="keyword">if</span> sum &gt; n || nowValue &gt; <span class="number">9</span> || <span class="built_in">len</span>(temp) &gt; k&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="comment">// 剪枝的条件</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//当前操作,分为选择当前值与不选择当前值</span></span><br><span class="line">        <span class="comment">//选择当前值</span></span><br><span class="line">        temp = <span class="built_in">append</span>(temp, nowValue)</span><br><span class="line">        dfs(nowValue+<span class="number">1</span>, sum+nowValue)</span><br><span class="line">        <span class="comment">//不选当前值，temp数组要回溯</span></span><br><span class="line">        temp = temp[:<span class="built_in">len</span>(temp)<span class="number">-1</span>]</span><br><span class="line">        dfs(nowValue+<span class="number">1</span>, sum)</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">1</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="第22题括号生成">第22题	括号生成</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/generate-parentheses/">https://leetcode.cn/problems/generate-parentheses/</a></p>
+<p><img src="image-20230716132947519.png" alt="image-20230716132947519"></p>
+<p>回溯的方法：</p>
+<p>这一题的思考就比前面的组合要复杂一些，首先还是边界条件，当序列合法时，肯定是序列长度等于2n时加入结果中并返回；由于这一题在剪枝方面不太好判断字串是否合法，故在加入括号的时候需令其合法，如下</p>
+<p>时间复杂度与空间复杂度都是为$O(4^n/根号(n))$</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">generateParenthesis</span><span class="params">(n <span class="keyword">int</span>)</span><span class="params">(res []<span class="keyword">string</span>)</span></span>&#123;</span><br><span class="line">    temp := []<span class="keyword">byte</span>&#123;&#125;</span><br><span class="line">    <span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span></span><br><span class="line">    dfs = <span class="function"><span class="keyword">func</span><span class="params">(leftCount <span class="keyword">int</span>, rightCount <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(temp) == <span class="number">2</span>*n&#123;</span><br><span class="line">            res = <span class="built_in">append</span>(res, <span class="keyword">string</span>(<span class="built_in">append</span>([]<span class="keyword">byte</span>&#123;&#125;, temp...)))</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//当前操作分为加左括号或者加右括号两步，</span></span><br><span class="line">        <span class="comment">//如加左括号，用条件判断</span></span><br><span class="line">        <span class="keyword">if</span> leftCount &lt; n &#123;</span><br><span class="line">            temp = <span class="built_in">append</span>(temp, <span class="string">&#x27;(&#x27;</span>)</span><br><span class="line">            dfs(leftCount+<span class="number">1</span>, rightCount)</span><br><span class="line">            temp = temp[:<span class="built_in">len</span>(temp)<span class="number">-1</span>] <span class="comment">//回溯</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//加右括号， 在满足右括号数量小于左括号时添加</span></span><br><span class="line">        <span class="keyword">if</span> rightCount &lt; leftCount &#123;</span><br><span class="line">            temp = <span class="built_in">append</span>(temp, <span class="string">&#x27;)&#x27;</span>)</span><br><span class="line">            dfs(leftCount, rightCount+<span class="number">1</span>)</span><br><span class="line">            temp = temp[:<span class="built_in">len</span>(temp)<span class="number">-1</span>] <span class="comment">//回溯</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面是一种另外的方法，按括号的长度进行递归的方法，时间复杂度与空间复杂度都是为$O(4^n/根号(n))$</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">generateParenthesis</span><span class="params">(n <span class="keyword">int</span>)</span>[]<span class="title">string</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> Dp1(n)[n]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Dp1</span><span class="params">(n <span class="keyword">int</span>)</span> <span class="title">map</span>[<span class="title">int</span>][]<span class="title">string</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> n==<span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">map</span>[<span class="keyword">int</span>][]<span class="keyword">string</span>&#123;<span class="number">0</span>:&#123;<span class="string">&quot;&quot;</span>&#125;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> n==<span class="number">1</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">map</span>[<span class="keyword">int</span>][]<span class="keyword">string</span>&#123;<span class="number">0</span>:&#123;<span class="string">&quot;&quot;</span>&#125;,<span class="number">1</span>:&#123;<span class="string">&quot;()&quot;</span>&#125;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	lastMap := Dp1(n<span class="number">-1</span>)</span><br><span class="line">	res := []<span class="keyword">string</span>&#123;&#125;</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; n; i++ &#123;</span><br><span class="line">		inners := lastMap[i]</span><br><span class="line">		outers := lastMap[n-i<span class="number">-1</span>]</span><br><span class="line">		<span class="keyword">for</span> _, inner := <span class="keyword">range</span>(inners)&#123;</span><br><span class="line">			<span class="keyword">for</span> _, outer := <span class="keyword">range</span>(outers)&#123;</span><br><span class="line">				res = <span class="built_in">append</span>(res, <span class="string">&quot;(&quot;</span>+inner+<span class="string">&quot;)&quot;</span>+outer)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	lastMap[n] = res</span><br><span class="line">	<span class="keyword">return</span> lastMap</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1>排列型回溯</h1>
+<p>先推荐一下灵神的视频</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mY411D7f6/?spm_id_from=333.788&amp;vd_source=9ac67fc51991e69b7ff04375142fa239">https://www.bilibili.com/video/BV1mY411D7f6/?spm_id_from=333.788&amp;vd_source=9ac67fc51991e69b7ff04375142fa239</a></p>
+<h2 id="第46题全排列">第46题	全排列</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/permutations/">https://leetcode.cn/problems/permutations/</a></p>
+<p><img src="image-20230716135439603.png" alt="image-20230716135439603"></p>
+<p>这一题其实不难，按照回溯的套路来做即可，边界条件加回溯三问，更重要的是时间复杂度的分析。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">permute</span><span class="params">(nums []<span class="keyword">int</span>)</span> [][]<span class="title">int</span></span> &#123;</span><br><span class="line">	res := [][]<span class="keyword">int</span>&#123;&#125;</span><br><span class="line">	visited := <span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">bool</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(path []<span class="keyword">int</span>)</span></span></span><br><span class="line">	dfs = <span class="function"><span class="keyword">func</span><span class="params">(path []<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">		<span class="keyword">if</span> <span class="built_in">len</span>(path) == <span class="built_in">len</span>(nums) &#123;</span><br><span class="line">            res = <span class="built_in">append</span>(res, <span class="built_in">append</span>([]<span class="keyword">int</span>&#123;&#125;, path...))</span><br><span class="line">			<span class="keyword">return</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> _, n := <span class="keyword">range</span> nums &#123;</span><br><span class="line">			<span class="keyword">if</span> visited[n] &#123;</span><br><span class="line">				<span class="keyword">continue</span></span><br><span class="line">			&#125;</span><br><span class="line">			path = <span class="built_in">append</span>(path, n)</span><br><span class="line">			visited[n] = <span class="literal">true</span></span><br><span class="line">			dfs(path)</span><br><span class="line">			path = path[:<span class="built_in">len</span>(path)<span class="number">-1</span>] <span class="comment">//回溯</span></span><br><span class="line">			visited[n] = <span class="literal">false</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	dfs([]<span class="keyword">int</span>&#123;&#125;)</span><br><span class="line">	<span class="keyword">return</span> res</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>首先给出时间复杂度为$O(n*n!)$ 空间复杂度$O(n)$</p>
+<p><img src="image-20230716141746126.png" alt="image-20230716141746126"></p>
+<p>（leetcode官方题解的说明）</p>
+<p><img src="image-20230716140955630.png" alt="image-20230716140955630"></p>
+<h2 id="第51题N皇后">第51题	N皇后</h2>
+<p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/n-queens/">https://leetcode.cn/problems/n-queens/</a></p>
+<p><img src="image-20230716143324850.png" alt="image-20230716143324850"></p>
+<p>这一题如果不考虑斜线的问题的话，其本质和前一题全排列是一样的，相当于是n个数的全排列，以n = 4 为例，满足要求的排列为[1,3,0,2]与 [2,0,3,1]，默认第i个数字就放在第i行。故可以先按全排列的思路来写，并在排列过程中判断斜线上的皇后是否可以放置。</p>
+<p>判读是否在同一斜线上的条件：</p>
+<ul>
+<li>右斜线上都有 r+c 相等</li>
+<li>左斜线上都有 r-c  相等</li>
+</ul>
+<p>代码如下：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">solveNQueens</span><span class="params">(n <span class="keyword">int</span>)</span> [][]<span class="title">string</span></span> &#123;</span><br><span class="line">    res := [][]<span class="keyword">string</span>&#123;&#125;</span><br><span class="line">    col := <span class="built_in">make</span>([]<span class="keyword">int</span>, n) <span class="comment">//用于记录列，比如col[0] = 2表示在第0行第2列放置皇后</span></span><br><span class="line">    visited := <span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">bool</span>&#123;&#125; </span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; n; i++&#123;</span><br><span class="line">        visited[i] = <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> valid <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span> <span class="title">bool</span> //判断斜线值是否合法</span></span><br><span class="line">    valid = <span class="function"><span class="keyword">func</span><span class="params">(r <span class="keyword">int</span>, c <span class="keyword">int</span>)</span> <span class="title">bool</span></span> &#123;</span><br><span class="line">        <span class="comment">//取所有已经放置过的位置</span></span><br><span class="line">        <span class="keyword">for</span> preR := <span class="number">0</span>; preR &lt; r; preR++&#123;</span><br><span class="line">            preC := col[preR]</span><br><span class="line">            <span class="keyword">if</span> preR + preC == r + c || preR - preC == r - c&#123;</span><br><span class="line">                <span class="comment">//在一条斜线上就返回false</span></span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> dfs <span class="function"><span class="keyword">func</span><span class="params">(<span class="keyword">int</span>)</span> //递归函数</span></span><br><span class="line">    dfs = <span class="function"><span class="keyword">func</span><span class="params">(r <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">        <span class="comment">//边界条件，什么时候ok，怎么处理</span></span><br><span class="line">        <span class="keyword">if</span> r == n &#123; <span class="comment">//不断增加行数，到r为n时，也就是全排列合法地排完时</span></span><br><span class="line">            temp := []<span class="keyword">string</span>&#123;&#125;</span><br><span class="line">            <span class="keyword">for</span> _, v := <span class="keyword">range</span> col&#123;</span><br><span class="line">                temp1 := []<span class="keyword">byte</span>&#123;&#125;</span><br><span class="line">                <span class="keyword">for</span> j := <span class="number">0</span>; j &lt; v; j++&#123;</span><br><span class="line">                    temp1 = <span class="built_in">append</span>(temp1, <span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">                &#125;</span><br><span class="line">                temp1 = <span class="built_in">append</span>(temp1, <span class="string">&#x27;Q&#x27;</span>)</span><br><span class="line">                <span class="keyword">for</span> j := v+<span class="number">1</span>; j&lt;n; j++&#123;</span><br><span class="line">                    temp1 = <span class="built_in">append</span>(temp1, <span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">                &#125;</span><br><span class="line">                temp = <span class="built_in">append</span>(temp, <span class="keyword">string</span>(<span class="built_in">append</span>([]<span class="keyword">byte</span>&#123;&#125;, temp1...)))</span><br><span class="line">            &#125;</span><br><span class="line">            res = <span class="built_in">append</span>(res, <span class="built_in">append</span>([]<span class="keyword">string</span>&#123;&#125;,temp... ))</span><br><span class="line">        &#125; <span class="comment">//生成相应格式的解</span></span><br><span class="line">        <span class="comment">//当前操作：从集合中取数并判断是否斜线合法</span></span><br><span class="line">        <span class="keyword">for</span> i, v := <span class="keyword">range</span> visited&#123; <span class="comment">//这里的i表示的就是集合中的元素,在下面代码中表示的就是列号，v表示是否用过</span></span><br><span class="line">            <span class="keyword">if</span> !v &amp;&amp; valid(r, i)&#123; <span class="comment">//未使用且合法</span></span><br><span class="line">                col[r] = i <span class="comment">//放置在第r行第i列</span></span><br><span class="line">                visited[i] = <span class="literal">true</span></span><br><span class="line">                dfs(r+<span class="number">1</span>)</span><br><span class="line">                visited[i] = <span class="literal">false</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    dfs(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> res</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>时间复杂度和全排列基本一致，但递归到最终的次数没那么多，并且成功时需花费n方时间构造一个二维的的解，故时间复杂度的上限为$O(n^2*n!)$,空间复杂度为$O(n^2)$</p>
+<h1>总结</h1>
+<p>本文归纳了回溯的三种类型，处理回溯类问题时，递归的函数体做两部分：</p>
+<ul>
+<li>首先是达到了边界条件后怎么处理，通常这里会产生解</li>
+<li>其次是处理主体，在这部分要思考回溯三问：当前怎么处理，子问题是什么，后续的子问题是什么。依此写出操作步骤，然后就是看看是选择剪枝（可以提前返回的条件，例如组合问题）还是限定条件处理，使后续步骤都是合法的（例如全排列、N皇后问题）</li>
+</ul>
+<p>回溯需需要注意的是要回溯数组或者map(哈希表)这种记录路径或者元素状态的结构的状态，也就是说在回到当时的现场，有些变量状态会自动回溯，但有的结构需要手动处理。</p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/cn/算法之二叉树/" data-toggle="tooltip" data-placement="top" title="算法3 二叉树">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=算法4 回溯&body=Hi,I found this website and thought you might like it http://yoursite-url/cn/算法之回溯/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Sat May 13 2023 15:25:18 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">算法之回溯</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">子集型回溯</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC78%E9%A2%98%E5%AD%90%E9%9B%86"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">第78题	子集</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC131%E9%A2%98%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">第131题	分割回文串</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">组合型回溯</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC77%E9%A2%98%E7%BB%84%E5%90%88"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">第77题	组合</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC216%E9%A2%98%E7%BB%84%E5%90%88%E2%85%A2"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">第216题	组合Ⅲ</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC22%E9%A2%98%E6%8B%AC%E5%8F%B7%E7%94%9F%E6%88%90"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">第22题	括号生成</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">排列型回溯</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC46%E9%A2%98%E5%85%A8%E6%8E%92%E5%88%97"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">第46题	全排列</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AC%AC51%E9%A2%98N%E7%9A%87%E5%90%8E"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">第51题	N皇后</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">总结</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#算法之回溯" title="算法之回溯">算法之回溯</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>链友</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://milky53.github.io" target="_blank">533</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/mengweifei">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          水云身
+          2023
+          <br>
+          Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+    <!-- LangSelect start -->
+    <script type="text/javascript" src="/js/langselect.js"></script>
+    <!-- LangSelect end -->
+  
+
+  
+    <!-- Mouseclick -->
+    <script type="text/javascript" src="/js/mouseclick.js" content='The first step is as good as half over...,Laugh and grow fat...,Man proposes God disposes...,When all else is lost the future still remains...,Wasting time is robbing oneself...,Sharp tools make good work...,Cease to struggle and you cease to live...,A friend in need is a friend indeed...,Faith can move mountains...' color='#9933CC,#339933,#66CCCC,#FF99CC,#CCCCFF,#6666CC,#663399,#66CC99,#FF0033'></script>
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	</body>
+</html>
